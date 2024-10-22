@@ -1,0 +1,45 @@
+body{
+    font-family: sans-serif;
+}
+header{
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-areas: 
+    "logo ul btn";
+    .logo{
+        grid-area: logo;
+
+        img{
+            width: 20%;
+            margin: 15px;
+        }
+    }
+    ul{
+        grid-area: ul;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        li{
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+            a{
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .btn{
+        grid-area: btn;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button{
+            background: #000;
+            color: white;
+            padding: 15px;
+            border-radius: 15px;
+        }
+    }
+}

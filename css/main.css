@@ -1,0 +1,54 @@
+body {
+  font-family: sans-serif;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  grid-template-areas: "logo ul btn";
+}
+header .logo {
+  grid-area: logo;
+}
+header .logo img {
+  width: 20%;
+  margin: 15px;
+}
+header ul {
+  grid-area: ul;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+header ul li {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+header .btn {
+  grid-area: btn;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .btn button {
+  background: #000;
+  color: white;
+  padding: 15px;
+  border-radius: 15px;
+}
